@@ -37,11 +37,13 @@
             this.btn3 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
+            this.btnPlayBee = new System.Windows.Forms.Button();
             this.palMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // palMain
             // 
+            this.palMain.Controls.Add(this.btnPlayBee);
             this.palMain.Controls.Add(this.btn8);
             this.palMain.Controls.Add(this.btn7);
             this.palMain.Controls.Add(this.btn6);
@@ -55,7 +57,7 @@
             this.palMain.Location = new System.Drawing.Point(0, 0);
             this.palMain.Margin = new System.Windows.Forms.Padding(4);
             this.palMain.Name = "palMain";
-            this.palMain.Size = new System.Drawing.Size(946, 192);
+            this.palMain.Size = new System.Drawing.Size(1027, 196);
             this.palMain.TabIndex = 0;
             // 
             // btn8
@@ -68,7 +70,6 @@
             this.btn8.TabIndex = 7;
             this.btn8.Text = "Do";
             this.btn8.UseVisualStyleBackColor = true;
-            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn7
             // 
@@ -109,7 +110,6 @@
             this.btn4.TabIndex = 3;
             this.btn4.Text = "Fa";
             this.btn4.UseVisualStyleBackColor = true;
-            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn3
             // 
@@ -142,11 +142,22 @@
             this.btn1.UseVisualStyleBackColor = true;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
+            // btnPlayBee
+            // 
+            this.btnPlayBee.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPlayBee.Location = new System.Drawing.Point(932, 73);
+            this.btnPlayBee.Name = "btnPlayBee";
+            this.btnPlayBee.Size = new System.Drawing.Size(83, 50);
+            this.btnPlayBee.TabIndex = 8;
+            this.btnPlayBee.Text = "▷";
+            this.btnPlayBee.UseVisualStyleBackColor = true;
+            this.btnPlayBee.Click += new System.EventHandler(this.btnPlayBee_Click);
+            // 
             // frmBeepPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 192);
+            this.ClientSize = new System.Drawing.Size(1027, 196);
             this.Controls.Add(this.palMain);
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -172,6 +183,7 @@
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btnPlayBee;
     }
 }
 

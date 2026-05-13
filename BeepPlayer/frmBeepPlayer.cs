@@ -22,8 +22,8 @@ namespace BeepPlayer
         [DllImport("kernel32.dll")]
         public static extern bool Beep(int frequency, int duration);
         int[] freq = { 523, 587, 659, 698, 784, 880, 988, 1046 };
+        int[] beeSong = { 4, 2, 2, 3, 1, 1, 0, 1, 2, 3, 4, 4, 4 };
 
-        
         public frmBeepPlayer()
         {
             InitializeComponent();
@@ -92,15 +92,7 @@ namespace BeepPlayer
             }
         }
 
-        private void btn4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn8_Click(object sender, EventArgs e)
-        {
-
-        }
+    
 
         private void frmBeepPlayer_KeyDown(object sender, KeyEventArgs e)
         {
@@ -133,6 +125,21 @@ namespace BeepPlayer
             }
         }
 
- 
+        private async void btnPlayBee_Click(object sender, EventArgs e)
+        {
+            btnPlayBee.Enabled = false;
+
+            foreach (int noteIndex in beeSong)
+            {
+                // 1. 發出聲音 (使用你現有的 Beep 函式)
+                // 頻率來自你的 freq 陣列，持續時間設為 300 毫秒
+                Beep(freq[noteIndex], 300);
+
+                // 2. 每個音符之間的間隔 (等待 100 毫秒，聽起來比較自然)
+                await Task.Delay(100);
+            }
+
+            btnPlayBee.Enabled = true;
+        }
     }
 }
