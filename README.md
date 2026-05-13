@@ -1,5 +1,6 @@
 # BeepPlayer簡易電子琴
 
+### 使用介面
 <img width="952" height="220" alt="image" src="https://github.com/user-attachments/assets/583e1577-86f0-42e1-8524-e58161154f2d" />
 
 ### 使用方式
