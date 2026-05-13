@@ -144,21 +144,25 @@
             // 
             // btnPlayBee
             // 
+            this.btnPlayBee.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnPlayBee.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPlayBee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPlayBee.Location = new System.Drawing.Point(932, 73);
             this.btnPlayBee.Name = "btnPlayBee";
             this.btnPlayBee.Size = new System.Drawing.Size(83, 50);
             this.btnPlayBee.TabIndex = 8;
             this.btnPlayBee.Text = "▷";
-            this.btnPlayBee.UseVisualStyleBackColor = true;
+            this.btnPlayBee.UseVisualStyleBackColor = false;
             this.btnPlayBee.Click += new System.EventHandler(this.btnPlayBee_Click);
             // 
             // frmBeepPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1027, 196);
             this.Controls.Add(this.palMain);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBeepPlayer";
